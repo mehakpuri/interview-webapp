@@ -1,0 +1,60 @@
+@import "main_style.scss";
+
+label{
+    @include formFont;
+    margin: 4px 4%;
+    width: 35%;
+    text-align: right;
+   
+}
+input{
+    @include inputField;
+    height: 18px;
+}
+input[type="radio"] {
+   @include inputType
+}
+input[type="checkbox"] {
+    @include inputType
+}
+.radio{
+    @include formFont;
+    margin: 4px 0;
+    text-align: left;
+}
+.pagePersonal{
+    @include inputField;
+    font-size: 15px;
+}
+.pageProfile{
+    width: 120px;
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.footer{
+    display: flex;
+    margin: 2%;
+}
+.errorAlerts{
+    font-size: 15px;
+    color: red;
+    font-style: italic;
+    text-align: left;
+}
+.input__field{
+    text-align: left;
+}
+.page__container {
+    margin: 3% auto;
+}
+.page__container_row{
+    margin: 0 20%;
+    display: flex; 
+}
+textarea {
+    @include inputField
+}
+.interview_textarea {
+    width: 400px;
+}
